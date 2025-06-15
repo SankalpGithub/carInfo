@@ -1,5 +1,8 @@
 import { Router, Request, Response } from "express";
-import { insertBrand, insertModel } from "../controllers/carInsertion";
+import {
+  insertBrand,
+  insertModel,
+} from "../controllers/carInsertion.controller";
 
 const router = Router();
 
