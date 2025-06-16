@@ -20,4 +20,9 @@ import userRouter from "./routes/user";
 
 app.use("/api/v1/users/", userRouter);
 
+//import carinsertion router
+import carInsertionRouter from "./routes/carInsertion";
+
+app.use("/api/v1/carInsertion/", carInsertionRouter);
+
 export default app;

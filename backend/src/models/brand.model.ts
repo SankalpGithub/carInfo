@@ -12,6 +12,22 @@ const brandSchema = new Schema({
     type: String,
     require: true,
   },
+  country: {
+    type: String,
+    require: true,
+  },
+  foundation_year: {
+    type: String,
+    require: true,
+  },
+  description: {
+    type: String,
+    require: true,
+  },
+  official_website_link: {
+    type: String,
+    require: true,
+  },
 });
 
-export const brand = mongoose.model("Brand", brandSchema);
+export const Brand = mongoose.model("Brand", brandSchema);

@@ -7,6 +7,14 @@ const carModelSchema = new Schema({
     unique: true,
     index: true,
   },
+  foundation_year: {
+    type: String,
+    require: true,
+  },
+  description: {
+    type: String,
+    require: true,
+  },
   img_url: {
     type: String,
     require: true,
@@ -17,4 +25,4 @@ const carModelSchema = new Schema({
   },
 });
 
-export const carModel = mongoose.model("carModel", carModelSchema);
+export const CarModel = mongoose.model("carModel", carModelSchema);

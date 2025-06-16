@@ -11,8 +11,12 @@ const variantSchema = new Schema({
     type: String,
     require: true,
   },
-  img_url: {
+  foundation_year: {
     type: String,
+    require: true,
+  },
+  img_url: {
+    type: [String],
     require: true,
   },
   carModel_id: {
@@ -27,4 +31,4 @@ const variantSchema = new Schema({
   ],
 });
 
-export const variant = mongoose.model("Variant", variantSchema);
+export const Variant = mongoose.model("Variant", variantSchema);
