@@ -1,5 +1,4 @@
 import { Brand } from "../models/brand.model";
-import { User } from "../models/user.model";
 import { MulterRequest } from "../types";
 import { ApiError } from "../utils/apiError";
 import { ApiResponse } from "../utils/apiResponse";
@@ -7,6 +6,7 @@ import { asyncHandler } from "../utils/asyncHandler";
 import { uploadOnCloudinary } from "../utils/cloudinary";
 import { CarModel } from "../models/carModel.model";
 import { Variant } from "../models/variant.model";
+import { Specification } from "../models/specification.model";
 
 export const insertBrand = asyncHandler(async (req, res) => {
   //get brand details from request
@@ -29,14 +29,16 @@ export const insertBrand = asyncHandler(async (req, res) => {
   }
 
   //check for image
-  const brand_logo_image_localPath = (req as MulterRequest).files
-    ?.brandImage?.[0]?.path;
-  if (!brand_logo_image_localPath) {
-    throw new ApiError(400, "brand logo image not found");
+  const brand_logo_image_local_path = (req as MulterRequest).files
+    ?.brand_image?.[0]?.path;
+  if (!brand_logo_image_local_path) {
+    throw new ApiError(400, "B`rand logo image not found");
   }
 
   //upload to cloudinary
-  const brand_logo_image = await uploadOnCloudinary(brand_logo_image_localPath);
+  const brand_logo_image = await uploadOnCloudinary(
+    brand_logo_image_local_path
+  );
 
   //brand object
   const brand_object = {
@@ -49,12 +51,11 @@ export const insertBrand = asyncHandler(async (req, res) => {
   };
   //check for entry created in db successfully
   const brand = await Brand.create(brand_object);
-  const created_brand = await Brand.findById(brand._id);
 
   //return res
   res
     .status(201)
-    .json(new ApiResponse(201, created_brand, "Brand inserted successfully"));
+    .json(new ApiResponse(201, brand_object, "Brand inserted successfully"));
 });
 
 export const insertModel = asyncHandler(async (req, res) => {
@@ -70,21 +71,21 @@ export const insertModel = asyncHandler(async (req, res) => {
     throw new ApiError(400, "all fileds are required");
   }
 
-  //check if brand already exist
+  //check if model already exist
   const existed_model = await CarModel.findOne({ name });
   if (existed_model) {
     throw new ApiError(409, "Model name already exists");
   }
 
   //check for image
-  const Model_logo_image_localPath = (req as MulterRequest).files
-    ?.modelImage?.[0]?.path;
-  if (!Model_logo_image_localPath) {
-    throw new ApiError(400, "brand logo image not found");
+  const model_image_local_path = (req as MulterRequest).files?.model_image?.[0]
+    ?.path;
+  if (!model_image_local_path) {
+    throw new ApiError(400, "model image not found");
   }
 
   //upload to cloudinary
-  const model_logo_image = await uploadOnCloudinary(Model_logo_image_localPath);
+  const model_image = await uploadOnCloudinary(model_image_local_path);
 
   //find brand id
   const brand = await Brand.findOne({ name: brand_name }).select("_id");
@@ -93,12 +94,12 @@ export const insertModel = asyncHandler(async (req, res) => {
   }
   const brand_id = brand?._id;
 
-  //brand object
+  //model object
   const model_object = {
     name,
     foundation_year,
     description,
-    logo_url: model_logo_image?.url || "",
+    img_url: model_image?.url || "",
     brand_id,
   };
 
@@ -132,14 +133,10 @@ export const insertVariant = asyncHandler(async (req, res) => {
 
   //check for image
   const files = req.files as Express.Multer.File[];
-  console.log(files);
 
   if (!files || files.length === 0) {
     throw new ApiError(400, "No images uploaded");
   }
-
-  // Get all files path
-  const imagePaths = files.map((file) => file.path);
 
   //upload to cloudinary
   const variant_images = await Promise.all(
@@ -172,5 +169,27 @@ export const insertVariant = asyncHandler(async (req, res) => {
     .status(201)
     .json(
       new ApiResponse(201, variant_object, "Variant inserted successfully")
+    );
+});
+
+export const insertSpecification = asyncHandler(async (req, res) => {
+  const variant_name = req.body.basicInformation.variant_name;
+  const variant = await Variant.findOne({ variant_name });
+  if (!variant) {
+    throw new ApiError(400, "variant not found");
+  }
+
+  const specs_object = req.body;
+
+  specs_object.variant_id = variant._id;
+
+  //check for entry created in db successfully
+  await Specification.create(specs_object);
+
+  //return res
+  res
+    .status(201)
+    .json(
+      new ApiResponse(201, specs_object, "Specification inserted successfully")
     );
 });

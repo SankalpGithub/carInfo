@@ -25,4 +25,8 @@ import carInsertionRouter from "./routes/carInsertion";
 
 app.use("/api/v1/carInsertion/", carInsertionRouter);
 
+import carInfo from "./routes/carInfo";
+
+app.use("/api/v1/carInfo/", carInfo);
+
 export default app;

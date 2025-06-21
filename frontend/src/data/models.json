@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "68540c303dd461612c590dfd",
+    "name": "Porsche 911",
+    "foundation_year": "1963",
+    "description": "The Porsche 911 is the brand’s most iconic rear-engine sports car, renowned for its timeless design, exceptional handling, and heritage in motorsports.",
+    "img_url": "http://res.cloudinary.com/diarlf57x/image/upload/v1750338607/wc711asabcbqjwkae7ti.jpg",
+    "brand_id": "68516c743066d661052d9e8c"
+  },
+  {
+    "_id": "68540c683dd461612c590e01",
+    "name": "Porsche Cayenne",
+    "foundation_year": "2002",
+    "description": "The Cayenne is Porsche’s luxury midsize SUV that blends sports car performance with everyday practicality and comfort.",
+    "img_url": "http://res.cloudinary.com/diarlf57x/image/upload/v1750338663/qar6sfhglf5vetyc4pdj.jpg",
+    "brand_id": "68516c743066d661052d9e8c"
+  },
+  {
+    "_id": "68540ccc3dd461612c590e05",
+    "name": "Porsche Taycan",
+    "foundation_year": "2019",
+    "description": "The Taycan is Porsche’s first all-electric vehicle, delivering exhilarating performance, advanced tech, and Porsche DNA in a futuristic EV package.",
+    "img_url": "http://res.cloudinary.com/diarlf57x/image/upload/v1750338763/k4p6uutefd9tzhgmxsyj.jpg",
+    "brand_id": "68516c743066d661052d9e8c"
+  },
+  {
+    "_id": "68540cef3dd461612c590e09",
+    "name": "Porsche Panamera",
+    "foundation_year": "2009",
+    "description": "The Panamera is a luxury performance sedan that combines Porsche’s sporty driving experience with four-door comfort and cutting-edge features.",
+    "img_url": "http://res.cloudinary.com/diarlf57x/image/upload/v1750338798/pkiczeyi7dmj50doqhhf.jpg",
+    "brand_id": "68516c743066d661052d9e8c"
+  },
+  {
+    "_id": "68540d0d3dd461612c590e0d",
+    "name": "Porsche Macan",
+    "foundation_year": "2014",
+    "description": "The Porsche Macan is a compact luxury SUV offering dynamic handling, sporty design, and premium interior—ideal for daily driving and weekend fun.",
+    "img_url": "http://res.cloudinary.com/diarlf57x/image/upload/v1750338828/cotqsvczzdou1wod5yks.jpg",
+    "brand_id": "68516c743066d661052d9e8c"
+  }
+]

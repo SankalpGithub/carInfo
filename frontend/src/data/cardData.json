@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "68516eaa0cc3445ecb44b082",
+    "name": "Porsche 911 Carrera S",
+    "price": "₹1.84 Cr",
+    "foundation_year": "2021",
+    "img_url": [
+      "https://res.cloudinary.com/diarlf57x/image/upload/v1750167207/p8tqqvkljwkxooqrc30z.png",
+      "https://res.cloudinary.com/diarlf57x/image/upload/v1750167209/vnaqw1yi4soaklulxfcd.jpg"
+    ],
+    "carModel_id": "68516d0a3066d661052d9e90",
+    "tags": ["Most Searched"]
+  },
+  {
+    "_id": "68516eaa0cc3445ecb44b082",
+    "name": "Porsche 911 Carrera S",
+    "price": "₹1.84 Cr",
+    "foundation_year": "2021",
+    "img_url": [
+      "https://res.cloudinary.com/diarlf57x/image/upload/v1750167207/p8tqqvkljwkxooqrc30z.png",
+      "https://res.cloudinary.com/diarlf57x/image/upload/v1750167209/vnaqw1yi4soaklulxfcd.jpg"
+    ],
+    "carModel_id": "68516d0a3066d661052d9e90",
+    "tags": ["Most Searched"]
+  }
+]

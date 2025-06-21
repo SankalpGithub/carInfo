@@ -13,10 +13,6 @@ const basicInformationSchema = new Schema({
     type: String,
     required: true,
   },
-  car_img_url: {
-    type: [String], // Array of image URLs
-    required: true,
-  },
   vehicle_type: {
     type: String,
     enum: [
@@ -69,7 +65,6 @@ const fuelEfficiencySchema = new Schema({
   fuel_type: {
     type: String,
     enum: ["Petrol", "Diesel", "Electric", "Hybrid", "CNG"],
-    required: true,
   },
   fuel_tank_capacity: String,
   mileage: String, // Can be in km/l or mpg

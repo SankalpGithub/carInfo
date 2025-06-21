@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "68516c743066d661052d9e8c",
+    "name": "Porsche",
+    "logo_url": "http://res.cloudinary.com/diarlf57x/image/upload/v1750166643/bwbuquz65znqtn2w5utm.png",
+    "country": "Germany",
+    "foundation_year": "1931",
+    "description": "Porsche is a luxury and high-performance automobile manufacturer specializing in sports cars, SUVs, and sedans. Known for iconic models like the 911, Cayenne, and Taycan (their first all-electric car), Porsche combines engineering excellence with premium design. The brand is also famous for its motorsport heritage, particularly in endurance racing like the 24 Hours of Le",
+    "official_website_link": "https://www.porsche.com"
+  },
+  {
+    "_id": "68526bb9812f3699f23d12e4",
+    "name": "Toyota",
+    "logo_url": "http://res.cloudinary.com/diarlf57x/image/upload/v1750231992/eap8qs6trnoj6str9zat.png",
+    "country": "Japan",
+    "foundation_year": "1937",
+    "description": "Toyota is one of the world’s largest automakers, known for its reliability, affordability, and innovation in hybrid technology. Iconic models include the Corolla, Camry, and Prius.  ",
+    "official_website_link": "https://www.toyota-global.com/"
+  },
+  {
+    "_id": "68526c0f812f3699f23d12e7",
+    "name": "Ford",
+    "logo_url": "http://res.cloudinary.com/diarlf57x/image/upload/v1750232078/mujjn9msofhh8dmer4g3.png",
+    "country": "USA",
+    "foundation_year": "1903",
+    "description": " Ford Motor Company revolutionized the automobile industry with mass production. Known for the Mustang, F-150, and Explorer, it continues to be a leader in innovation and performance.  ",
+    "official_website_link": "https://www.ford.com/"
+  },
+  {
+    "_id": "68526c42812f3699f23d12ea",
+    "name": "BMW",
+    "logo_url": "http://res.cloudinary.com/diarlf57x/image/upload/v1750232129/qajhu3npbuovqmr2cws1.png",
+    "country": "Germany",
+    "foundation_year": "1916",
+    "description": " BMW (Bayerische Motoren Werke) is a German premium car and motorcycle manufacturer, renowned for sporty driving dynamics and luxury. Notable models include the 3 Series, 7 Series, and X5.  ",
+    "official_website_link": "https://www.bmw.com/"
+  },
+  {
+    "_id": "68526c78812f3699f23d12ed",
+    "name": "Hyundai",
+    "logo_url": "http://res.cloudinary.com/diarlf57x/image/upload/v1750232183/fomh2zh4ezcx62vzsfy9.png",
+    "country": "South Korea",
+    "foundation_year": "1967",
+    "description": " Hyundai is a leading South Korean automotive brand known for value, design, and technology. It offers models like the Creta, Verna, and Ioniq EV lineup.  ",
+    "official_website_link": "https://www.hyundai.com/"
+  }
+]
