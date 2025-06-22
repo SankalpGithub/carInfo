@@ -1,6 +1,6 @@
 // store/useBrandStore.ts
 import { create } from "zustand";
-import { brand } from "../../../type";
+import { brand } from "../../../types/type";
 import brandData from "@/data/brands.json";
 
 export const useBrandStore = create<{

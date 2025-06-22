@@ -1,0 +1,133 @@
+[
+  {
+    "_id": "68517a21b4fc7fb6981a8e81",
+    "variant_id": "68516eaa0cc3445ecb44b082",
+    "basicInformation": {
+      "brand": "Porsche",
+      "model": "911",
+      "variant": "Carrera S",
+      "vehicle_type": "Coupe",
+      "description": "The Porsche 911 Carrera S is a performance-oriented sports coupe known for its iconic design, thrilling drive, and luxurious interiors.",
+      "_id": "68517a21b4fc7fb6981a8e82"
+    },
+    "performance": {
+      "engine_type": "3.0L Twin-Turbocharged Boxer 6",
+      "engine_displacement": "2981 cc",
+      "horsepower": "443 hp",
+      "torque": "530 Nm",
+      "transmission": "8-speed PDK Automatic",
+      "drivetrain": "RWD",
+      "top_speed": "308 km/h",
+      "acceleration": "0-100 km/h in 3.7 seconds",
+      "_id": "68517a21b4fc7fb6981a8e83"
+    },
+    "fuelEfficiency": {
+      "fuel_type": "Petrol",
+      "fuel_tank_capacity": "64 L",
+      "mileage": "10.5 km/l",
+      "range": "672 km",
+      "_id": "68517a21b4fc7fb6981a8e84"
+    },
+    "dimensions": {
+      "length": "4519 mm",
+      "width": "1852 mm",
+      "height": "1299 mm",
+      "wheelbase": "2450 mm",
+      "ground_clearance": "109 mm",
+      "boot_space": "132 L",
+      "kerb_weight": "1505 kg",
+      "gross_vehicle_weight": "1900 kg",
+      "_id": "68517a21b4fc7fb6981a8e85"
+    },
+    "chassisSuspension": {
+      "chassis_type": "Aluminium-Steel Hybrid",
+      "front_suspension": "MacPherson Strut",
+      "rear_suspension": "Multi-link",
+      "steering_type": "Electric",
+      "turning_radius": "5.4 m",
+      "_id": "68517a21b4fc7fb6981a8e86"
+    },
+    "brakesTires": {
+      "front_brakes": "Disc",
+      "rear_brakes": "Disc",
+      "tire_size": "245/35 ZR20 (front), 305/30 ZR21 (rear)",
+      "wheel_type": "Alloy",
+      "spare_tire": "Space saver",
+      "_id": "68517a21b4fc7fb6981a8e87"
+    },
+    "exteriorFeatures": {
+      "headlights": "LED",
+      "fog_lamps": true,
+      "drl": true,
+      "alloy_wheels": true,
+      "sunroof": false,
+      "moonroof": false,
+      "roof_rails": false,
+      "rain_sensing_wipers": true,
+      "_id": "68517a21b4fc7fb6981a8e88"
+    },
+    "interiorFeatures": {
+      "seating_capacity": 4,
+      "seat_material": "Leather",
+      "adjustable_seats": "Electric",
+      "infotainment_system": "10.9-inch touchscreen with navigation",
+      "touchscreen_display": true,
+      "apple_carplay": true,
+      "android_auto": false,
+      "air_conditioner_type": "Dual-Zone",
+      "rear_ac_vents": true,
+      "ambient_lighting": true,
+      "cruise_control": true,
+      "digital_instrument_cluster": true,
+      "_id": "68517a21b4fc7fb6981a8e89"
+    },
+    "safetyFeatures": {
+      "airbags": 6,
+      "abs_with_ebd": true,
+      "traction_control": true,
+      "esp": true,
+      "rear_parking_camera": true,
+      "rear_parking_sensors": true,
+      "isofix_child_seat_mounts": true,
+      "tpms": true,
+      "hill_hold_control": true,
+      "hill_descent_control": false,
+      "lane_keep_assist": false,
+      "blind_spot_monitor": true,
+      "_id": "68517a21b4fc7fb6981a8e8a"
+    },
+    "comfortConvenience": {
+      "keyless_entry": true,
+      "push_button_start": true,
+      "power_windows": true,
+      "power_adjustable_mirrors": true,
+      "heated_seats": true,
+      "ventilated_seats": true,
+      "wireless_charging": true,
+      "navigation_system": true,
+      "voice_command": true,
+      "_id": "68517a21b4fc7fb6981a8e8b"
+    },
+    "infotainmentConnectivity": {
+      "speaker_system": {
+        "brand": "BOSE",
+        "count": 12
+      },
+      "bluetooth_connectivity": true,
+      "usb_ports": 4,
+      "wifi_hotspot": true,
+      "_id": "68517a21b4fc7fb6981a8e8c"
+    },
+    "variantsColors": {
+      "available_colors": [
+        "Racing Yellow",
+        "Carrara White",
+        "Jet Black",
+        "Gentian Blue"
+      ],
+      "variant_features": "Sport Chrono Package, PASM Suspension, BOSE Surround Sound, Leather Package",
+      "price": "₹1.88 Cr (ex-showroom)",
+      "_id": "68517a21b4fc7fb6981a8e8d"
+    }
+  }
+]

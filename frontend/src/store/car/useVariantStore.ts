@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { variant } from "../../../type";
+import { variant } from "../../../types/type";
 import variantsData from "@/data/cardData.json";
 
 export const useVarinatStore = create<{

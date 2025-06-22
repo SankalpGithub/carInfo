@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { model } from "../../../type";
+import { model } from "../../../types/type";
 import modelsData from "@/data/models.json";
 
 export const useModelStore = create<{

@@ -9,6 +9,7 @@ interface CarCardProps {
   price: string;
   rating: number;
   isFavorite?: boolean;
+  onClick: () => void;
 }
 
 const CarCard: React.FC<CarCardProps> = ({
@@ -18,6 +19,7 @@ const CarCard: React.FC<CarCardProps> = ({
   price,
   rating,
   isFavorite = false,
+  onClick,
 }) => {
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("en-US", {
@@ -111,7 +113,10 @@ const CarCard: React.FC<CarCardProps> = ({
 
         {/* Action Buttons */}
         <div className="flex space-x-3">
-          <button className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-200 transform hover:scale-[1.02] shadow-lg hover:shadow-xl">
+          <button
+            onClick={onClick}
+            className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-200 transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
+          >
             View Details
           </button>
           <button className="px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-xl font-semibold hover:bg-blue-600 hover:text-white transition-all duration-200 transform hover:scale-[1.02]">
